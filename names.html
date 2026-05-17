@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Names</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-btn">Menu</button>
+<nav id="sidebar">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="guess.html">Guess The Word</a> <a href="names.html">History Of Names</a>
+        <a href="connect.html">Country Connect</a>
+        <a href="word-connect.html">Word Connect</a>
+    </nav>
+
+    <div class="page-container">
+        <header class="static-header">
+            <h1>History of your Name</h1>
+            <p>Type any name below to discover its ancient roots, meaning, and cultural journey.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="name-input" placeholder="e.g., Alexander, Sarah, Mateo..." autocomplete="off">
+            <button id="search-btn">Discover</button>
+        </div>
+
+        <div id="results-card" class="hidden">
+            <h2 id="result-title"></h2>
+            <div id="history-content"></div>
+        </div>
+
+        <footer class="global-footer">
+            <p>Powered by the Google Gemini API</p>
+        </footer>
+
+    </div> <script src="names.js"></script>
+</body>
+</html>

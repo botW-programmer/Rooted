@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Word</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-btn">Menu</button>
+    <nav id="sidebar">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="guess.html">Guess The Word</a>
+        <a href="names.html">History Of Names</a>
+        <a href="connect.html">Country Connect</a>
+        <a href="word-connect.html">Word Connect</a>
+    </nav>
+
+    <div class="page-container">
+        <header class="static-header">
+            <h1>Guess The Word</h1>
+            <p>Six chances to guess the daily word. Green means correct, yellow means wrong place!</p>
+        </header>
+
+        <div class="lang-selector">
+            <button class="lang-btn active" data-file="english">English</button>
+            <button class="lang-btn" data-file="spanish">Español</button>
+            <button class="lang-btn" data-file="french">Français</button>
+        </div>
+
+        <div id="game-board">
+            </div>
+
+        <div id="game-message" class="hidden"></div>
+
+        <div id="keyboard-container">
+            <div class="keyboard-row">
+                <button class="key" data-key="q">Q</button>
+                <button class="key" data-key="w">W</button>
+                <button class="key" data-key="e">E</button>
+                <button class="key" data-key="r">R</button>
+                <button class="key" data-key="t">T</button>
+                <button class="key" data-key="y">Y</button>
+                <button class="key" data-key="u">U</button>
+                <button class="key" data-key="i">I</button>
+                <button class="key" data-key="o">O</button>
+                <button class="key" data-key="p">P</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="key" data-key="a">A</button>
+                <button class="key" data-key="s">S</button>
+                <button class="key" data-key="d">D</button>
+                <button class="key" data-key="f">F</button>
+                <button class="key" data-key="g">G</button>
+                <button class="key" data-key="h">H</button>
+                <button class="key" data-key="j">J</button>
+                <button class="key" data-key="k">K</button>
+                <button class="key" data-key="l">L</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="key wide-key" data-key="Enter">ENTER</button>
+                <button class="key" data-key="z">Z</button>
+                <button class="key" data-key="x">X</button>
+                <button class="key" data-key="c">C</button>
+                <button class="key" data-key="v">V</button>
+                <button class="key" data-key="b">B</button>
+                <button class="key" data-key="n">N</button>
+                <button class="key" data-key="m">M</button>
+                <button class="key wide-key" data-key="Backspace">⌫</button>
+            </div>
+        </div>
+
+        <footer class="global-footer">
+            <p>Powered by the Google Gemini API</p>
+        </footer>
+
+    </div>
+
+    <script src="guess.js"></script>
+</body>
+</html>

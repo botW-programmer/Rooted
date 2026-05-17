@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-btn">Menu</button>
+    <nav id="sidebar">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="guess.html">Guess The Word</a>
+        <a href="names.html">History Of Names</a>
+        <a href="connect.html">Country Connect</a>
+        <a href="word-connect.html">Word Connect</a>
+    </nav>
+
+    <div class="page-container">
+        <header class="static-header">
+            <h1>Country Connect</h1>
+            <p>Trace the journey of a word across the globe.</p>
+        </header>
+
+        <div id="search-container">
+            <input type="text" id="word-input" placeholder="Enter a word (e.g., Coffee, Algorithm)..." autocomplete="off">
+            <button id="search-btn">Trace Path</button>
+        </div>
+
+        <div id="results-card" class="hidden">
+            <h2 id="result-title"></h2>
+            <div id="journey-map"></div>
+        </div>
+
+        <div class="map-controls">
+            <button id="toggle-map-btn">Switch to 3D Globe</button>
+        </div>
+
+        <div id="map-container">
+            <div id="map"></div>
+            <div id="globe-map" class="map-invisible"></div>
+        </div>
+
+        <footer class="global-footer">
+            <p>Powered by the Google Gemini API</p>
+        </footer>
+    </div> 
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+    <script src="connect.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-btn">Menu</button>
+    <nav id="sidebar">
+        <h2>Explore</h2>
+        <a href="index.html">Home</a>
+        <a href="guess.html">Guess The Word</a> <a href="names.html">History Of Names</a>
+        <a href="connect.html">Country Connect</a>
+        <a href="word-connect.html">Word Connect</a>
+    </nav>
+
+    <div class="page-container">
+        <header class="static-header">
+            <h1>Word Connect</h1>
+            <p>Discover the hidden historical and cultural threads linking any two words.</p>
+        </header>
+
+        <div class="dual-search-box">
+            <input type="text" id="word1-input" placeholder="e.g., Tea" autocomplete="off">
+            <span class="link-icon">~~</span>
+            <input type="text" id="word2-input" placeholder="e.g., Silk" autocomplete="off">
+            <button id="search-btn">Connect</button>
+        </div>
+
+        <div id="results-card" class="hidden">
+            <h2 id="result-title"></h2>
+            <div id="connection-story"></div>
+        </div>
+
+        <footer class="global-footer">
+            <p>Powered by the Google Gemini API</p>
+        </footer>
+
+    </div> <script src="word-connect.js"></script>
+</body>
+</html>
