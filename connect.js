@@ -1,8 +1,6 @@
-// 1. Configuration Setup
-const API_KEY = 'AIzaSyDRy5sudw4Ny1YeZXUZoKBMCyGI7nJOgb4';
+const API_KEY = 'AIzaSyBKzo3gm8UrfoMOkpOY4kJ8pqlFqivpM14';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
-// 2. DOM Elements Mapping
 const wordInput = document.getElementById('word-input');
 const searchBtn = document.getElementById('search-btn');
 const resultsCard = document.getElementById('results-card');
@@ -14,14 +12,12 @@ const toggleMapBtn = document.getElementById('toggle-map-btn');
 const map2D = document.getElementById('map');
 const map3D = document.getElementById('globe-map');
 
-// map ctrl
 let map;
 let markerGroup;
 let worldGlobe; 
 let is3D = false; 
 
 function initMap() {
-    // 2D map
     map = L.map('map', {
         minZoom: 2,
         maxBounds: [[-90, -180], [90, 180]],
